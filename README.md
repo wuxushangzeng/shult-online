@@ -23,13 +23,13 @@
 
 ## 本地预览
 
-任选一种静态服务器即可，例如：
+任选一种静态服务器即可，例如使用 Python 启动一个临时服务器：
 
 ```bash
-python3 -m http.server 8080
+python3 -m http.server 1314
 ```
 
-然后访问 <http://localhost:8080>。
+然后访问 <http://localhost:1314>。
 
 ## 部署到 nginx
 
@@ -69,7 +69,7 @@ sudo nginx -t
 sudo systemctl reload nginx
 ```
 
-页面内所有资源均使用相对路径，部署在子目录时也无需修改代码。例如 `/var/www/html/schulte/` 对应访问地址 `https://example.com/schulte/`。
+页面内所有资源均使用相对路径。
 
 ## 数据说明
 
